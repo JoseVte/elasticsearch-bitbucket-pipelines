@@ -1,9 +1,8 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch:7.3.2
+FROM docker.elastic.co/elasticsearch/elasticsearch:8.12.0
 
-MAINTAINER Ivan Takarlikov <vtakarlikov@gmail.com>
+LABEL maintainer Jose Vicente <jvortsromero@gmail.com>
 
 ENV discovery.type="single-node"
+ENV xpack.security.enabled=false
 
-ENV http.port=9250
-
-EXPOSE 9250/tcp
+EXPOSE 9200/tcp
