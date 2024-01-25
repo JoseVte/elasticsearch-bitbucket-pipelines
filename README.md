@@ -15,7 +15,7 @@ definitions:
         name: Run tests
         script:
           - sleep 30 # Waiting elasticsearch. In your real pipeline you can not use it.
-          - curl -XGET localhost:9250/_cat/health
+          - curl -XGET localhost:9200/_cat/health
         services:
           - elasticsearch
   services:
