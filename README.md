@@ -2,7 +2,7 @@
 Bitbucket pipelines does not allow you to use dot notation in variables. So I created my own elastic search docker image to include the discovery type.
 
 ## Version
-Elasticsearch 8.12.0
+Elasticsearch 8.17.3
 
 ## Hub
 https://hub.docker.com/r/josrom/elasticsearch-bitbucket-pipeline
